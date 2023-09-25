@@ -198,7 +198,7 @@ class Surveillance:
 					self.stopRecording()
 					savedvideo = self.saveFramesToVideo()
 					print('saved video', savedvideo)
-					#self.uploader.upload(savedvideo, self.currtimestamp,self.all_movements)
+					self.uploader.upload(savedvideo, self.currtimestamp,self.all_movements)
 
 
 			cv2.imshow("mask", fgmask)
